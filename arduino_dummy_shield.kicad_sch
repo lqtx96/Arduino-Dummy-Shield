@@ -6184,6 +6184,88 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_names
@@ -8743,7 +8825,7 @@
 		)
 		(uuid "0d8cfe6d-11bf-42b9-9752-f9a5a76bce7e")
 	)
-	(label "*13"
+	(label "VIN"
 		(at 279.4 77.47 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8754,7 +8836,7 @@
 		)
 		(uuid "11339740-7fab-496c-a71e-febcfde52ccc")
 	)
-	(label "VIN"
+	(label "*12"
 		(at 260.35 74.93 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8875,7 +8957,7 @@
 		)
 		(uuid "23f0c933-49f0-4410-a8db-8b017f48dadc")
 	)
-	(label "VIN"
+	(label "*10"
 		(at 222.25 74.93 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8996,7 +9078,7 @@
 		)
 		(uuid "3797c671-8f74-4132-83d6-c5388e670188")
 	)
-	(label "*10"
+	(label "VIN"
 		(at 222.25 77.47 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9172,7 +9254,7 @@
 		)
 		(uuid "54be04e4-fffa-4f7f-8a5f-d0de81314e8f")
 	)
-	(label "*8"
+	(label "VIN"
 		(at 184.15 77.47 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9194,7 +9276,7 @@
 		)
 		(uuid "5c32ca0d-8e67-4df1-af47-611b3c3c2986")
 	)
-	(label "*12"
+	(label "VIN"
 		(at 260.35 77.47 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9205,7 +9287,7 @@
 		)
 		(uuid "5e5b82bc-454b-4492-ac0f-489e54b32b64")
 	)
-	(label "*11"
+	(label "VIN"
 		(at 241.3 77.47 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9238,7 +9320,7 @@
 		)
 		(uuid "608d4b3e-0e44-4c96-9bc3-24d3ef50b73d")
 	)
-	(label "VIN"
+	(label "*8"
 		(at 184.15 74.93 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9282,7 +9364,7 @@
 		)
 		(uuid "6766f166-39a0-441f-bfc9-ad344a53a5ff")
 	)
-	(label "VIN"
+	(label "*13"
 		(at 279.4 74.93 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9568,7 +9650,7 @@
 		)
 		(uuid "901760da-3431-4cae-ac0a-30ef239aa055")
 	)
-	(label "VIN"
+	(label "*9"
 		(at 203.2 74.93 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9986,7 +10068,7 @@
 		)
 		(uuid "c8f2751e-59a1-474e-82bf-8085a882f0ab")
 	)
-	(label "*9"
+	(label "VIN"
 		(at 203.2 77.47 0)
 		(fields_autoplaced yes)
 		(effects
@@ -10041,7 +10123,7 @@
 		)
 		(uuid "d083f7f5-23d1-4a37-b85c-c70db0501733")
 	)
-	(label "VIN"
+	(label "*11"
 		(at 241.3 74.93 0)
 		(fields_autoplaced yes)
 		(effects
@@ -11436,7 +11518,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 236.22 77.47 180)
+		(at 236.22 77.47 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11444,7 +11527,7 @@
 		(dnp no)
 		(uuid "02895ec1-37db-47e2-8371-0a8dbc9852bf")
 		(property "Reference" "J19"
-			(at 232.918 74.93 0)
+			(at 232.918 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11506,7 +11589,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 179.07 77.47 180)
+		(at 179.07 77.47 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11514,7 +11598,7 @@
 		(dnp no)
 		(uuid "148112dd-030d-4498-870c-1af8732942d5")
 		(property "Reference" "J16"
-			(at 175.768 74.93 0)
+			(at 175.768 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11643,6 +11727,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 50.8 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25a09ade-afb5-46b9-9582-f5ec9dcf71b0")
+		(property "Reference" "H4"
+			(at 53.34 189.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 53.34 191.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_Via"
+			(at 50.8 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 50.8 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "arduino_dummy_shield"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND_8")
 		(lib_id "power:GND")
 		(at 165.1 176.53 0)
@@ -11727,7 +11875,7 @@
 				)
 			)
 		)
-		(property "Value" "Motor"
+		(property "Value" "MOTOR"
 			(at 250.952 51.816 0)
 			(effects
 				(font
@@ -11848,7 +11996,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 198.12 77.47 180)
+		(at 198.12 77.47 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11856,7 +12005,7 @@
 		(dnp no)
 		(uuid "35685238-cb7b-497d-9188-5b12eecf52bc")
 		(property "Reference" "J17"
-			(at 194.818 74.93 0)
+			(at 194.818 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11933,7 +12082,7 @@
 				)
 			)
 		)
-		(property "Value" "Analog"
+		(property "Value" "ADC"
 			(at 59.69 73.66 90)
 			(effects
 				(font
@@ -12275,6 +12424,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 50.8 165.1 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "499e8317-d01e-4115-adb8-377bf4fbbad5")
+		(property "Reference" "H2"
+			(at 53.34 163.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 53.34 166.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_Via"
+			(at 50.8 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 50.8 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "arduino_dummy_shield"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND_4")
 		(lib_id "power:GND")
 		(at 184.15 54.61 0)
@@ -12342,7 +12555,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 217.17 77.47 180)
+		(at 217.17 77.47 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12350,7 +12564,7 @@
 		(dnp no)
 		(uuid "55d5d8a3-8332-418d-bdfc-172af062853d")
 		(property "Reference" "J18"
-			(at 213.868 74.93 0)
+			(at 213.868 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12766,7 +12980,7 @@
 				)
 			)
 		)
-		(property "Value" "Motor"
+		(property "Value" "MOTOR"
 			(at 193.802 51.816 0)
 			(effects
 				(font
@@ -13025,7 +13239,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 255.27 77.47 180)
+		(at 255.27 77.47 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13033,7 +13248,7 @@
 		(dnp no)
 		(uuid "69da48b3-8a14-4f1d-8cce-97d950432730")
 		(property "Reference" "J20"
-			(at 251.968 74.93 0)
+			(at 251.968 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13371,7 +13586,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 274.32 77.47 180)
+		(at 274.32 77.47 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13379,7 +13595,7 @@
 		(dnp no)
 		(uuid "7da16ddc-92a1-4074-af10-774874f61724")
 		(property "Reference" "J21"
-			(at 271.018 74.93 0)
+			(at 271.018 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13872,7 +14088,7 @@
 				)
 			)
 		)
-		(property "Value" "Analog"
+		(property "Value" "ADC"
 			(at 21.59 90.17 0)
 			(effects
 				(font
@@ -13943,7 +14159,7 @@
 				)
 			)
 		)
-		(property "Value" "Analog"
+		(property "Value" "ADC"
 			(at 21.59 115.57 0)
 			(effects
 				(font
@@ -14361,7 +14577,7 @@
 				)
 			)
 		)
-		(property "Value" "Analog"
+		(property "Value" "ADC"
 			(at 21.59 102.87 0)
 			(effects
 				(font
@@ -14564,7 +14780,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Analog"
+		(property "Value" "ADC"
 			(at 59.182 122.428 90)
 			(effects
 				(font
@@ -14723,7 +14939,7 @@
 				)
 			)
 		)
-		(property "Value" "Motor"
+		(property "Value" "MOTOR"
 			(at 270.002 51.816 0)
 			(effects
 				(font
@@ -14994,7 +15210,7 @@
 				)
 			)
 		)
-		(property "Value" "Analog"
+		(property "Value" "ADC"
 			(at 21.59 77.47 0)
 			(effects
 				(font
@@ -15199,7 +15415,7 @@
 				)
 			)
 		)
-		(property "Value" "Analog"
+		(property "Value" "ADC"
 			(at 21.59 64.77 0)
 			(effects
 				(font
@@ -15270,7 +15486,7 @@
 				)
 			)
 		)
-		(property "Value" "Motor"
+		(property "Value" "MOTOR"
 			(at 212.852 51.816 0)
 			(effects
 				(font
@@ -15483,6 +15699,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 50.8 177.8 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d62b3762-1944-478f-b4c1-aac512d3e5d3")
+		(property "Reference" "H3"
+			(at 53.34 176.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 53.34 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_Via"
+			(at 50.8 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 50.8 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "arduino_dummy_shield"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 151.13 167.64 270)
 		(mirror x)
@@ -15635,7 +15915,7 @@
 				)
 			)
 		)
-		(property "Value" "Analog"
+		(property "Value" "ADC"
 			(at 21.59 128.27 0)
 			(effects
 				(font
@@ -16049,7 +16329,7 @@
 				)
 			)
 		)
-		(property "Value" "Motor"
+		(property "Value" "MOTOR"
 			(at 174.752 51.816 0)
 			(effects
 				(font
@@ -16188,7 +16468,7 @@
 				)
 			)
 		)
-		(property "Value" "Motor"
+		(property "Value" "MOTOR"
 			(at 231.902 51.816 0)
 			(effects
 				(font
@@ -16443,6 +16723,70 @@
 			(project "arduino_mega_robot_shield"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 50.8 152.4 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb7f68f7-76e5-4834-b047-d2e9f279e983")
+		(property "Reference" "H1"
+			(at 53.34 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 53.34 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_Via"
+			(at 50.8 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 50.8 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "H1")
 					(unit 1)
 				)
 			)
